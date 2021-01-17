@@ -1,0 +1,6 @@
+package com.jpresti.gallery
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}

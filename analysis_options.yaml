@@ -1,0 +1,25 @@
+include: package:lint/analysis_options_package.yaml
+
+linter:
+  rules:
+    # Effective Dart:
+    avoid_equals_and_hash_code_on_mutable_classes: true
+    lines_longer_than_80_chars: true
+    prefer_relative_imports: true
+    unnecessary_lambdas: true
+
+    # pedantic package:
+    prefer_single_quotes: true
+    unawaited_futures: true
+
+    # Excluding from lint package:
+    avoid_classes_with_only_static_members: false
+    avoid_redundant_argument_values: false
+    prefer_final_locals: false
+    prefer_void_to_null: false
+    sort_pub_dependencies: false
+    use_setters_to_change_properties: false
+
+analyzer:
+  strong-mode:
+    implicit-dynamic: false
