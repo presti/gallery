@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gallery/images/repository/images_repository.dart';
 
+import '../images/repository/images_repository.dart';
 import '../theme/color.dart';
 import '../theme/images.dart';
 import '../theme/strings.dart';

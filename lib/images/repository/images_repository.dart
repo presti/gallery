@@ -1,5 +1,4 @@
-import 'package:gallery/providers/logger.dart';
-
+import '../../providers/logger.dart';
 import '../../utils/functional/mayfail.dart';
 import 'image_dto.dart';
 import 'image_model.dart';

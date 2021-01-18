@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:gallery/gallery/gallery_image_widget.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 
 import '../images/repository/image_model.dart';
 import '../images/repository/images_repository.dart';
 import '../theme/dimen.dart';
 import '../utils/functional/mayfail.dart';
+import 'gallery_image_widget.dart';
 
-typedef _ImageBuilder = Widget Function(
+typedef ImageBuilder = Widget Function(
   BuildContext context,
   ImageModel item,
   int index,
@@ -16,7 +16,7 @@ typedef _ImageBuilder = Widget Function(
 class GalleryWidget extends StatefulWidget {
   final String query;
   final ImagesRepository repository;
-  final _ImageBuilder imageBuilder;
+  final ImageBuilder imageBuilder;
 
   const GalleryWidget(
     this.repository, {

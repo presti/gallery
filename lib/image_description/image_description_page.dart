@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:gallery/image_description/image_description_widget.dart';
 
 import '../images/repository/image_model.dart';
 import '../theme/color.dart';
 import '../theme/strings.dart';
+import 'image_description_widget.dart';
 
 class ImageDescriptionPage extends StatelessWidget {
   final ImageModel image;
